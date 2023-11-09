@@ -1,0 +1,393 @@
+html{
+  scroll-behavior: smooth;
+}
+/* body{
+  transition: opacity 5s ease;
+} */
+#home_page{
+    background-color: beige;
+    height: 600px;
+    width: 100%;
+    padding-top: 30px;
+ }
+ blink{
+     font-size: 50px;
+     margin-left: 5px;
+     margin-top: 100px;
+ }
+ #Name_hey{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .blink_text{  
+     animation-name:blink;
+     width:400px;
+     animation-duration:5s;
+     animation-timing-function:ease-in;
+     animation-iteration-count:Infinite;
+     margin-left: 75px;
+     margin-top: 100px;
+     margin-right: 120px;
+     }
+
+   @keyframes blink{
+     0%{color:rgb(99, 95, 95);}
+     25%{color: rgb(51, 47, 47);}
+     50%{color: rgb(116, 106, 106);}
+     75%{color: gray;}
+     100%{color:whitesmoke;}
+   }
+
+   .menu{
+     float: right;
+     color:grey;
+   }
+   .Nav_table{
+      float: right;
+      margin-left: 85%;
+     justify-content: right;
+     display: flex;
+     /* margin-right: 75px; */
+     color: grey;
+     position: fixed;
+   }
+   li{
+     margin-bottom: 20px;
+   }
+   #Name{
+     margin-left: 50px;
+   }
+   #Request{
+     color: grey;
+     margin-left: 100px;
+     transition: all 1s;
+     position: fixed;
+
+   }
+   #send_request{
+    transition: opacity 10s ease;
+    color: gray;
+   }
+   #send_request:hover{
+     color: black;
+     text-decoration: underline;
+     font-size: 30px;
+     transition: all 1s;
+   }
+   #Web_developer:hover{
+     color: black;
+     text-decoration: underline;
+     font-size: 30px;
+     transition: all 1s;
+   }
+   #Web_developer{
+     margin-left: 450px;
+     color: grey;
+   }
+   #home_pagepic{
+     float: right;
+     border-radius: 50%;
+     height: 400px;
+     width: 350px;
+     margin-top: 100px;
+     transition: all 2s;
+     animation-duration:20s;
+     animation-timing-function:ease-in;
+     animation-iteration-count:Infinite;
+     animation-name: home_page_pic;
+   }
+   @keyframes home_page_pic{
+    0%{content:url("portfoliohome1.jpg");}
+    20%{content: url("portfoliohome2.jpg");}
+    40%{content: url("portfoliohome3.jpg");}
+    60%{content: url("portfoliohome4.jpg");}
+    80%{content:url("portfoliohome1.jpg");}
+    100%{content: url("portfoliohome3.jpg");}
+   }
+   #home_pagepic:hover{
+    content: url("contactimage6.jpg");
+    transition: all 2s;
+    float: right;
+    border-radius: 10%;
+    height: 400px;
+    width: 350px;
+    margin-top: 100px;
+   }
+   .home_button{
+    background-color: beige;
+    color: grey;
+    font-size: 15px;
+    box-shadow: 0 8px 12px grey;
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    margin-left: 10px;
+   }
+   .home_form{
+    margin-top: 100px;
+    margin-left: 50px;
+
+   }
+   a{
+    color: grey;
+   }
+   a:hover{
+    color: black;
+   }
+   .container {
+     display: flex;
+   }
+   .changedata{
+     transition: all 0.5s ease;
+   }
+   .changedata:hover{
+     font-size: 30px;
+     color: black;
+     text-decoration: underline;
+   }
+
+/* About */
+
+#about{
+    height: 600px;
+    display: flex;
+    font-size: 50px; 
+    min-height: 100vh;
+    width: 100%;
+    background-color:grey;
+}
+#about:hover{
+    transition: all 0.5s;
+}
+
+#about_text{
+    margin-left: 100px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    -webkit-text-stroke: 0.3vw grey;
+    text-transform: uppercase;
+    color:grey;
+}
+#about_text h1::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    height: 100px;
+    color: beige;
+    -webkit-text-stroke:0vw grey;
+    border-right: 1px solid beige;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width: 350px;
+    }
+}
+.self_intro{
+    color: white;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: 230px;
+    margin-right: 100px;
+}
+/* Skills Page */
+#skills{
+  background-color: beige;
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+}
+.skills_text{
+  color: grey;
+  font-size: 50px;
+  justify-content: center;
+  display: flex;
+  /* position: relative; */
+  /* animation-name: example;
+  animation-duration: 15s;
+  animation-iteration-count:Infinite; */
+  width: 100%;
+  height: 50px;
+}
+ /* @keyframes example{
+  0%   {color:rgb(165, 115, 41); left:0px; top:0px;}
+  30%  {color:blanchedalmond; left:30%; top:0px;}
+  40%  {color:rgb(165, 115, 41); left:35%; top:100px;}
+  50% {color: blanchedalmond;left:40%;top:0;}
+  60% {color:rgb(165, 115, 41);left:50%;top:100px;}
+  70%  {color:blanchedalmond; left:55%; top:0;}
+  80% {color:rgb(165, 115, 41); left:60%; top:100px;}
+  85%{color:blanchedalmond;left:65%;top:0;}
+  100%{color:rgb(165, 115, 41);left:100%;top:0;}
+ } */
+.skills_Type{
+  color: gray;
+  font-size: 20px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.front_Skills{
+margin-right: 200px;
+}
+.skills_data{
+  display: flex;
+  justify-content: center;
+}
+
+.front_end_skills{
+  width: 50%;
+  border-right: 2px solid grey;
+ margin-top: 50px;
+ padding-right: 50px;
+ text-align:right ;
+ height: 150px;
+ color: grey;
+}
+.skills_hover:hover{
+  color: black;
+  font-size: 30px;
+  text-decoration: underline;
+  transition: 1s;
+}
+.back_end_skills{
+  width: 50%;
+  float: left;
+  margin-top: 50px;
+  padding-left: 50px;
+  height: 200px;
+  color: grey;
+}
+/* Conatct Page */
+#Contact_Us{
+  background-color: beige;
+  /* background-color:rgb(245, 240, 230) ; */
+  /* background-image:url(contactimage.jpg); */
+  height: 600px;
+  width: 100%;
+  
+}
+.contact_text1{
+  color: rgb(55, 31, 14);
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 100px;
+  padding-left: 80px;
+}     
+.contact_text2{
+  color: rgb(55, 31, 14);
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  margin-left: 80px;
+}          
+#contact_form{
+  margin-left: 80px;
+  color: rgb(55, 31, 14);
+  font-family: Arial, sans-serif;
+}  
+.contact_image img{
+  height: 600px;
+  width: 30%;
+  float: right;
+  margin-right: 50px;
+  
+}
+.form_input{
+  border:none;
+  border-left: black solid 1px;
+  border-bottom: black solid 1px;
+  width: 200px;
+  margin-left: 5px;
+  background-color: beige;
+}
+.form_input:hover{
+  box-shadow: 0px 6px 8px rgb(55, 31, 14);
+  border-radius: 20px;
+}
+/* Project Page */
+#Project{
+  width:100%;
+  height:600px;
+  background-color: grey;
+}
+.project_text1{
+  justify-content: center;
+  display: flex;
+  font-size: 50px;
+  Color : white;
+  padding-top: 50px;
+  scroll-behavior: smooth;
+}
+.project_text{
+  margin-left: 20px;
+  color: white;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+}
+.slider img:hover{
+  border-radius: 50%;
+  transition: all 0.5s;
+  box-shadow: 0px 8px 10px rgb(245, 240, 230);
+}
+
+.slide {
+  display: none;
+  transition: opacity 2s ease;
+}
+
+.slide.active {
+  display: flex;
+  height: 300px;
+  width: 800px;
+  justify-content: center;
+
+}
+.prev {
+margin-left: 45%;
+background-color: grey;
+color: white;
+margin-top: 10px;
+height: 50px;
+width: 40px;
+border-radius: 50%;
+box-shadow: 2px 8px 10px rgb(245, 240, 230);
+font-size: 30px;
+border-color: grey;
+scroll-behavior: smooth;
+}
+.next{
+  background-color: grey;
+  color: white;
+  margin-top: 10px;
+  margin-left: 5%;
+  height: 50px;
+  width: 40px;
+  border-radius: 50%;
+  border-color: grey;
+  box-shadow: 2px 8px 10px rgb(245, 240, 230);
+  font-size: 30px;
+  scroll-behavior: smooth;
+}
+
+/* Style the images or content within the slides */
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the buttons */
+button {
+  cursor: pointer;
+}
