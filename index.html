@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="homepage.css">
+<body >
+  <div Class="portfolio">
+    <div id="home_page">
+        <table class="Nav_table">
+            <tr>
+                <td>
+            <ul>
+            <a href="#home_page" ><li class="changedata" >Home</li></a>
+            <a href="#about" ><li class="changedata" >About</li></a>
+            <a href="#skills" ><li class="changedata" >Skills</li></a>
+            <a href="#Project" ><li class="changedata">Project</li></a>
+            <a href="#Contact_Us"><li class="changedata">Footer</li></a>
+            </ul>
+                </td>
+        </table>
+        <div id="Request">
+        <p ><u id="send_request"><a href="#Contact_Us">Send Request</a></u><span id="Web_developer"><a>Web Developer</a></span></p></div>
+        <div class="container">
+          <div class="text">    
+            <p class="blink_text"> <blink><span id="Name_hey">Hey....</span></blink><br>
+            <blink>I am Kashish </blink> </p>    <br>       
+           <div>
+            <div class="home_form">
+              <form class="email_id"> 
+             <a href="#Contact_Us"><button class="home_button"> Get In Touch  </button></a>
+             <button class="home_button"><a href="Resume.pdf"Download>Download Resume</a></button>
+              </form>                       
+            </div>
+              </div>
+            </div>
+          <div class="image">
+            <img id="home_pagepic" src="portfoliohome1.jpg">
+        <br><br>
+        </div>  
+</div>
+<div id="about">
+<div id="about_text"><h1  data-text="About">About</h1></div>
+<div class="self_intro">"Hi there! My name is Kashish. I'm originally from a small town in the northside but currently reside 
+in Rohtak City. I am fresher and seaking for an opportunity, specializing in software development .
+Beyond my professional life, I'm an avid hiker and nature enthusiast. Exploring the great outdoors, 
+capturing moments through photography, and creating digital art based on my adventures are some of
+my passions.
+</div>
+</div>
+<div id="skills">
+  <div class="skills_text">
+    Skills
+  </div>
+  <div class="skills_Type"><div class="front_Skills">Front End Skills</div><div class="back_skills"> Back End Skills</span></div>
+</div>
+<div class="skills_data">
+  <div class="front_end_skills">
+    <table>
+<tr>
+  <li class="skills_hover">HTML</li>
+  <li class="skills_hover">CSS</li>
+  <li class="skills_hover">Javascript</li>
+</tr>
+    </table>
+  </div>
+  <div class="back_end_skills">
+    <table>
+<tr>
+  <li class="skills_hover">Python</li>
+  <li class="skills_hover">SQL(Structured Query Language)</li>
+  <li class="skills_hover">Conceptual In Opps</li>
+</tr>
+    </table>
+  </div>
+</div>
+<div id="Project">
+  <div class="project_text1">Projects</div>
+  <div class="slider">
+    <div class="slide active">
+        <img src="projectjervis3.jpg" alt="Image 1" style="width: 50%;height:100;">
+        <div  class="project_text" style="width: 50%;height:100%;"><b style="font-size: 30px;">Project Title </b>:- System Application Controller<br><br><b style="font-size: 30px;">Description</b><br><br>
+          The System Application Controller is a software solution designed to remotely manage and control various 
+          applications running on a local system. This system provides a centralized interface that enables users to 
+          interact with and control different applications installed on their system from a single point.
+         </div>
+    </div>
+    <div class="slide">
+        <img src="projectweb.jpg" alt="Image 2" style="width:50%">
+        <div  class="project_text" style="width: 50%;height:100%;"><b style="font-size: 30px;">Project Title
+          </b>:- Software Service Portal<br><br><b style="font-size: 30px;">Description</b><br><br>
+          The Software Service Portal is an innovative web application designed to offer
+          a suite of software services to individuals, businesses, and organizations. 
+          This platform provides a range of software solutions aimed at addressing diverse 
+          needs, enabling users to streamline their operations, enhance productivity, and 
+          meet their technological requirements..</div>
+    </div>
+    <div class="slide">
+        <img src="projectportfolio.jpg" alt="Image 3" style="width: 50%;">
+        <div  class="project_text" style="width: 50%;height:100%;"><b style="font-size: 30px;">Project Title
+        </b>:- Portfolio<br><br><b style="font-size: 30px;">Description</b><br><br>
+        Kashish Portfolio is a showcase of her professional journey, expertise, and accomplishments
+         in the IT Domain software. This online portfolio is a carefully curated collection of her work, 
+         highlighting her skills, projects, and experiences in specific fields, technologies, or industries</div>
+    </div>
+    <!-- Add more slides as needed -->
+</div>
+
+<button class="prev" onclick="moveSlide(-1)"><b><</b></button>
+<button class="next" onclick="moveSlide(1)"><b>></b></button>
+
+</div>
+<div id="Contact_Us">
+  
+<div >  
+<div class="contact_image"><img src="contactimage4.jpg"></div>
+<div class="contact_text1">Let's Chat....</div><br><br><div class="contact_text2">I am always here to help you</div><br><br>
+<form id="contact_form" action="prac.html" method="get"">
+
+    <label for="name">Name:</label>
+    <input type="text" class="form_input"  id="Form_name" name="name" placeholder=" Enter Your Name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="Form_Email" name="Email" class="form_input" placeholder="Enter Your's Email" required><br><br>
+    <label for="message">Message:</label><br>
+    <textarea class="form_input" name="Message" rows="4" cols="30" required></textarea><br><br>
+    <input type="submit" name="submit" onclick="submitform()" >
+</form>
+</div>
+</body>
+<script>
+   /* Project Div Slider */
+   let slideIndex = 0;
+   const intervalTime=3000;
+   showSlides(slideIndex);
+  function moveSlide(n) {
+      showSlides((slideIndex += n));
+  }
+  function showSlides(n) {
+      const slides = document.getElementsByClassName("slide");
+      if (n >= slides.length) {
+          slideIndex = 0;
+      }
+      if (n < 0) {
+          slideIndex = slides.length - 1;
+      }
+      for (let i = 0; i < slides.length; i++) {
+          slides[i].classList.remove("active");
+      }
+      slides[slideIndex].classList.add("active");
+  } 
+  function startSlider() {
+    setInterval(function () {
+      showSlides(slideIndex);
+      slideIndex++; // Move to the next slide
+    }, intervalTime);
+  }
+  // Start the slider
+  startSlider();
+/* Submit Form */
+  function submitform(){
+  var name=document.getElementById('Form_name').value;
+  var email=document.getElementById('Form_Email').value;
+  var message=document.getElementById('Form_Email').value;
+  console.log("name: " + name);
+  console.log("email: " + email);
+  console.log("Message: " + message);
+  event.preventDefault();
+} 
+</script>
+</html>
